@@ -8,53 +8,48 @@
     <link rel="stylesheet" href="assets/css/board.style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a href="#" class="navbar__logo">
-          <img
-            src="assets/images/logo v.2 noback.png"
-            alt="logo"
-            width="80px"
+    <nav class="navbar">
+      <a href="#" class="navbar__logo">
+        <img src="assets/images/logo v.2 noback.png" alt="logo" width="80px" />
+      </a>
+      <ul class="navbar__link">
+        <li><a href="#">音樂商城</a></li>
+        <li><a href="#">詞曲交流</a></li>
+        <li><a href="#">常見問題</a></li>
+        <li><a href="#">聯絡我們</a></li>
+        <li><a href="#">登入</a></li>
+      </ul>
+    </nav>
+
+    <header class="introarea">
+      <article class="introarea-title">
+        <h1>詞曲交流</h1>
+        <p>
+          歡迎各位詞曲創作者在此進行音樂交流，<br />
+          徵求詞、曲合作、討論音樂編成，豐富彼此創作！<br />
+          <br />
+          若您是想購買特定類型音樂的消費者，也可以在這裏提出需求，<br />
+          BEATCOME 將替您媒合適合的創作者。<br />
+          <br />
+          ＊留言請尊重他人，共同守護社群環境：）<br />
+          需先登入會員方可使用。
+        </p>
+      </article>
+      <article class="introarea-comment">
+        <div class="introarea-comment__input">
+          <input
+            class="introarea-comment__input__title"
+            type="text"
+            placeholder="請輸入標題"
           />
-        </a>
-        <ul class="navbar__link">
-          <li><a href="#">音樂商城</a></li>
-          <li><a href="#">詞曲交流</a></li>
-          <li><a href="#">常見問題</a></li>
-          <li><a href="#">聯絡我們</a></li>
-          <li><a href="#">登入</a></li>
-        </ul>
-      </nav>
-      <header class="introarea">
-        <article class="introarea-title">
-          <h1>詞曲交流</h1>
-          <p>
-            歡迎各位詞曲創作者在此進行音樂交流，<br />
-            徵求詞、曲合作、討論音樂編成，豐富彼此創作！<br />
-            <br />
-            若您是想購買特定類型音樂的消費者，也可以在這裏提出需求，<br />
-            BEATCOME 將替您媒合適合的創作者。<br />
-            <br />
-            ＊留言請尊重他人，共同守護社群環境：）<br />
-            需先登入會員方可使用。
-          </p>
-        </article>
-        <article class="introarea-comment">
-          <div class="introarea-comment__input">
-            <input
-              class="introarea-comment__input__title"
-              type="text"
-              placeholder="請輸入標題"
-            />
-            <hr />
-            <input
-              class="introarea-comment__input__content"
-              type="text"
-              placeholder="請輸入內容"
-            />
-          </div>
-        </article>
-      </header>
+          <hr />
+          <input
+            class="introarea-comment__input__content"
+            type="text"
+            placeholder="請輸入內容"
+          />
+        </div>
+      </article>
     </header>
   </body>
 </html>
