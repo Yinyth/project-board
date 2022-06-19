@@ -1,0 +1,26 @@
+.navbar {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&__link{
+	padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+&__link a{
+	display: flex;
+	text-decoration:none;
+  padding-bottom: 3px;
+  margin-left: 1rem;
+	color: white;
+  border-bottom: 1px solid white transparent;
+	}
+
+	&__link a:hover{
+		border-bottom: 1px solid white;
+	}
+}

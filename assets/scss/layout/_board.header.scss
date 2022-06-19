@@ -1,0 +1,70 @@
+header{
+	position: relative;
+	color: white;
+}
+
+.introarea{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url('/assets/images/bg:board.jpg');
+
+	h1{
+		font-size: xx-large;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	p{
+		font-size: large;
+		width: 100%;
+		text-align: center;
+		line-height: 30px;
+	}
+}
+
+.introarea-title{
+	margin-bottom: 40px;
+}
+
+.introarea-comment{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+
+	&__input{
+		width: 60%;
+		height: 30vh;
+		border-radius: 10px;
+		background-color: #404040;
+
+		input:hover {
+			border-bottom: 1px solid #bababa;
+		}
+
+		&__title, &__content {
+			margin: 4% 10% 1% 10%;
+			cursor: text;
+			background: none;
+			border: none;
+			border-bottom: 1px solid #bababa transparent;
+		}
+
+		&__title {
+			font-size: x-large;
+		}
+
+		&__content {
+			font-size: large;
+		}
+
+
+		hr {
+			width: 80%;
+		}
+	}
+
+
+}
