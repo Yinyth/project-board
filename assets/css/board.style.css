@@ -138,6 +138,8 @@ body {
   margin: 2% 10%;
   height: 200vh;
   background-image: url("../images/bg-board.jpg");
+  background-color: #121212;
+  background-repeat: no-repeat;
 }
 
 .navbar {
