@@ -219,47 +219,203 @@ header {
   margin-bottom: 40px;
 }
 
-.introarea-comment {
+.post-part {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.post-part section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  background-color: #505050;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.post-part section hr {
+  width: 70%;
+}
+
+.board-title {
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  margin: 20px auto 10px auto;
+  line-height: 50px;
+  border-radius: 10px;
+  border: none;
+  background: none;
+  color: white;
+}
+
+.board-content {
+  color: white;
+  background: none;
+  border: none;
+}
+
+.pop-head {
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.board-content,
+.pop-reply {
+  width: 400px;
+  height: 150px;
+  font-size: 18px;
+  margin: 10px 50px;
+  text-decoration: none;
+  outline: none;
+  border-radius: 10px;
+  resize: none;
+}
+
+.board-btn,
+.pop-btn {
+  height: 40px;
+  margin: 10px auto;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 0 20px;
+  color: white;
+  background: #bababa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.msg-area {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.msg-area li {
+  list-style: none;
+  width: 80%;
+  font-size: 22px;
+  margin: 15px 30px;
+}
+
+.msg-area li hr {
+  width: 95%;
+  margin: auto;
+}
+
+.message-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 6%;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.message-title {
+  width: 500px;
+  line-height: 50px;
+  display: block;
+  background: #121212;
+  font-size: 20px;
+  margin: 10px 15px;
+  border-radius: 8px;
+  text-indent: 15px;
+}
+
+.message-comment,
+.reply p {
+  width: 500px;
+  line-height: 50px;
+  display: block;
+  background: #121212;
+  font-size: 20px;
+  margin: 10px 15px;
+  border-radius: 8px;
+  text-indent: 15px;
+}
+
+.answer {
+  width: 60px;
+  height: 30px;
+  display: block;
+  margin-left: auto;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  background: #505050;
+  color: white;
+}
+
+.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(117, 117, 117, 0.3);
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
+  display: none;
 }
 
-.introarea-comment__input {
-  width: 60%;
-  height: 30vh;
+.pop-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 700px;
+  background: #fff;
   border-radius: 10px;
-  background-color: #404040;
+  overflow: hidden;
+  padding-bottom: 20px;
 }
 
-.introarea-comment__input input:hover {
-  border-bottom: 1px solid #bababa;
-}
-
-.introarea-comment__input__title, .introarea-comment__input__content {
-  margin: 4% 10% 1% 10%;
-  cursor: text;
-  background: none;
-  border: none;
-  border-bottom: 1px solid #bababa transparent;
-}
-
-.introarea-comment__input__title {
-  font-size: x-large;
-}
-
-.introarea-comment__input__content {
-  font-size: large;
-}
-
-.introarea-comment__input hr {
-  width: 80%;
+.pop-reply p {
+  margin-bottom: 10px 0;
+  text-align: left;
 }
 /*# sourceMappingURL=board.style.css.map */

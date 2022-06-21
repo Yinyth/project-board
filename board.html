@@ -32,24 +32,56 @@
           BEATCOME 將替您媒合適合的創作者。<br />
           <br />
           ＊留言請尊重他人，共同守護社群環境：）<br />
-          需先登入會員方可使用。
         </p>
-      </article>
-      <article class="introarea-comment">
-        <div class="introarea-comment__input">
-          <input
-            class="introarea-comment__input__title"
-            type="text"
-            placeholder="請輸入標題"
-          />
-          <hr />
-          <input
-            class="introarea-comment__input__content"
-            type="text"
-            placeholder="請輸入內容"
-          />
-        </div>
-      </article>
-    </header>
+      </header>
+    <br />
+    <br />
+
+    <div class="post-part">
+      <section class="post-part__input">
+        <input class="board-title" type="text" placeholder="輸入標題" />
+        <hr />
+        <textarea class="board-content" placeholder="輸入內容"></textarea>
+        <button class="board-btn">送出</button>
+      </section>
+
+      <ul class="msg-area">
+        <!-- <li>
+            <div class="message-head">
+              <p class="message-title">測試標題</p>
+              <hr />
+              <p class="message-comment">測試留言</p>
+            </div>
+            <div class="reply">
+            <p>測試回覆</p>
+            </div>
+            <button class="answer">回覆</button>
+        </li> -->
+      </ul>
+    </div>
+    <div class="popup">
+      <div class="pop-content">
+        <div class="pop-head">回覆</div>
+        <textarea
+          class="pop-reply"
+          placeholder="輸入回覆內容"
+        ></textarea>
+        <span>
+        <button class="pop-btn reDo">回覆</button>
+        <button class="pop-btn cancel">取消</button>
+
+        <!-- <ul class="reply-area">
+          <!-- <li>
+              <div class="reply-head">
+                <p class="reply-content">回覆內容</p>
+              </div>
+          </li> -->
+        </ul>
+         -->
+        </span>
+      </div>
+    </div>
+
+    <script src="assets/javascript/board_comment_javascript.js"></script>
   </body>
 </html>
