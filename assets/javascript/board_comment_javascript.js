@@ -11,9 +11,9 @@ document.onclick = function (e) {
       var oLi = document.createElement('li');
       oLi.innerHTML = `
                     <div class="message-head">
-                    <p class="message-title">${msgTitle}</p>
+                    <p class="message-title">標題：${msgTitle}</p>
                     <hr />
-                    <p class="message-comment">${content}</p>
+                    <p class="message-comment">內容：${content}</p>
                     </div>
                     <div class="reply">
                     </div>
@@ -36,26 +36,26 @@ document.onclick = function (e) {
   }
 
   if (target.className === 'pop-btn reDo') {
-    //拿到回复的内容
     var reDoContent = $('.pop-reply').value;
 
     if (reDoContent) {
       var oP = document.createElement('p');
-      oP.innerHTML = reDoContent;
+      oP.innerHTML = `回覆：` + reDoContent;
       oAns.appendChild(oP);
     }
 
     $('.popup').style.display = 'none';
+    $('.pop-reply').value = '';
     return;
   }
 
   if (target.className === 'pop-btn cancel') {
     $('.popup').style.display = 'none';
+    $('.pop-reply').value = '';
     return;
   }
 };
 
-//获取对象
 function $(selector) {
   return document.querySelector(selector);
 }
