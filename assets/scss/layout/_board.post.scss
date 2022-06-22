@@ -33,6 +33,7 @@
 	background: none;
 	color: white;
 }
+
 .board-content {
 	color: white;
 	background: none;
@@ -119,8 +120,7 @@
 	text-indent: 15px;
 }
 
-.message-comment,
-.reply p {
+.message-comment, .reply p {
 	width: 500px;
 	// height: 76px;
 	line-height: 50px;
@@ -131,6 +131,7 @@
 	border-radius: 8px;
 	text-indent: 15px;
 }
+
 
 .answer {
 	width: 60px;
@@ -172,7 +173,7 @@
 	padding-bottom: 20px;
 }
 
-.pop-reply p {
-	margin-bottom: 10px 0;
-	text-align: left;
-}
+// .reply-area p {
+// 	margin-bottom: 10px 0;
+// 	text-align: left;
+// }
